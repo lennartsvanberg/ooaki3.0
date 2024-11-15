@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+}
+
+.logo-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav .menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav .menu li {
+    display: inline;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.main-image, .curtain-image, .fabric-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.dropdown-section, .curtain-section, .fabric-samples {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#sofa-model-select {
+    margin-top: 10px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.fabric-sample-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fabric-image {
+    width: 32%;
+}

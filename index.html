@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ooaki</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-menu">
+                <img src="ooaki-logo.avif" alt="Ooaki Logotyp" class="logo">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#bestall-tygprover">Beställ tygprover</a></li>
+                        <li><a href="#skradarsy-soffkladsel">Skräddarsy soffklädsel</a></li>
+                        <li><a href="#mattbestall-gardiner">Måttbeställ gardiner</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="sofa.jpg" alt="Soffa" class="main-image">
+            <h1>Byt inte soffa - byt klädsel!</h1>
+        </header>
+        
+        <section class="dropdown-section">
+            <label for="know-sofa-name">Vet du namnet på din soffa?</label>
+            <select id="know-sofa-name" onchange="toggleSofaSelection()">
+                <option value="no">Nej</option>
+                <option value="yes">Ja</option>
+            </select>
+
+            <div id="sofa-selection" style="display:none;">
+                <label for="sofa-select">Välj din soffa</label>
+                <select id="sofa-select" onchange="updateSofaOptions()">
+                    <option value="">Välj...</option>
+                    <option value="dux">Dux</option>
+                    <option value="eilersen">Eilersen</option>
+                    <option value="engelsen">Engelsen</option>
+                    <option value="fogia">Fogia</option>
+                    <option value="annan-soffa">Annan soffa</option>
+                </select>
+                <select id="sofa-model-select" style="display:none;"></select>
+            </div>
+
+            <div id="sofa-type-selection" style="display:none;">
+                <label for="sofa-type">Min soffa är en</label>
+                <select id="sofa-type">
+                    <option value="3-sits">3-sits</option>
+                    <option value="2-sits">2-sits</option>
+                    <option value="fatolj">Fåtölj</option>
+                    <option value="4-sits">4-sits</option>
+                    <option value="divan">Divan</option>
+                    <option value="hornsoffa">Hörnsoffa</option>
+                </select>
+            </div>
+        </section>
+        
+        <section class="curtain-section">
+            <img src="curtain.jpg" alt="Gardin" class="curtain-image">
+            <h2>Vi skräddarsyr även gardiner</h2>
+            
+            <label for="curtain-height">Hur hög ska din gardin vara</label>
+            <select id="curtain-height">
+                <option value="180">180 cm</option>
+                <option value="190">190 cm</option>
+                <option value="200">200 cm</option>
+            </select>
+
+            <label for="curtain-width">Hur bred ska din gardin vara</label>
+            <select id="curtain-width">
+                <option value="200">200 cm</option>
+                <option value="220">220 cm</option>
+                <option value="240">240 cm</option>
+            </select>
+        </section>
+        
+        <section class="fabric-samples" id="bestall-tygprover">
+            <h3>Vi bjuder på tygprover</h3>
+            <div class="fabric-sample-images">
+                <img src="fabric1.jpg" alt="Tygprov 1" class="fabric-image">
+                <img src="fabric2.jpg" alt="Tygprov 2" class="fabric-image">
+                <img src="fabric3.jpg" alt="Tygprov 3" class="fabric-image">
+            </div>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
